@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的课程表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background: linear-gradient(135deg, #e8f4f8, #d1ecf9);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 80, 140, 0.12);
+            padding: 40px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a5276;
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 80, 140, 0.08);
+        }
+
+        thead th {
+            background: linear-gradient(135deg, #2980b9, #3498db);
+            color: #ffffff;
+            padding: 14px 10px;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        tbody td {
+            border: 1px solid #d6eaf8;
+            padding: 12px 8px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 13px;
+            color: #2c3e50;
+            transition: background 0.2s;
+            height: 52px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background: #f0f8ff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #ffffff;
+        }
+
+        tbody tr:hover {
+            background: #d6eaf8;
+        }
+
+        tbody td:first-child {
+            background: linear-gradient(135deg, #2980b9, #3498db);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            width: 70px;
+        }
+
+        .course {
+            color: #1a5276;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 24px;
+            color: #7fb3d8;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📚 我的课程表</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>节次</th>
+            <th>周一</th>
+            <th>周二</th>
+            <th>周三</th>
+            <th>周四</th>
+            <th>周五</th>
+            <th>周六</th>
+            <th>周日</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1-2</td>
+            <td><span class="course">大学生心理健康教育</span></td>
+            <td></td>
+            <td><span class="course">大学生心理健康教育</span></td>
+            <td><span class="course">C语言程序设计</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3-4</td>
+            <td><span class="course">高等数学A(一)</span></td>
+            <td><span class="course">中国近现代史纲要</span></td>
+            <td><span class="course">高等数学A(一)</span></td>
+            <td><span class="course">中国近现代史纲要</span></td>
+            <td><span class="course">高等数学A(一)</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5-6</td>
+            <td><span class="course">大学综合英语(一)</span></td>
+            <td><span class="course">高等数学A(一)<br>计算机科学导论</span></td>
+            <td></td>
+            <td></td>
+            <td><span class="course">形势与政策</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7-8</td>
+            <td></td>
+            <td><span class="course">C语言程序设计</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9-10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11-12</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><span class="course">中国共产党革命精神<br>(思想政治及新时代素质教育类)</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <footer>Made with ❤️ by AI</footer>
+</div>
+</body>
+</html>
